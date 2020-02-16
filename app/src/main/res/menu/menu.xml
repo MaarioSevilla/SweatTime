@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_fitness"/>
+    <item
+        android:id="@+id/descubre"
+        android:title="Descubre"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/time"
+        android:title="Time"
+        android:icon="@drawable/ic_watch"/>
+    <item
+        android:id="@+id/notifitions"
+        android:title="Notificaciones"
+        android:icon="@drawable/ic_notifications"/>
+    <item
+        android:id="@+id/settings"
+        android:title="Configuracón"
+        android:icon="@drawable/ic_settings"/>
+
+</menu>
