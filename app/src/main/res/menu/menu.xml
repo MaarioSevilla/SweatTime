@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/home"
-        android:title="Home"
+        android:title="Inicio"
         android:icon="@drawable/ic_fitness"/>
     <item
         android:id="@+id/descubre"
@@ -11,7 +11,7 @@
         android:icon="@drawable/ic_home"/>
     <item
         android:id="@+id/time"
-        android:title="Time"
+        android:title="Informe"
         android:icon="@drawable/ic_watch"/>
     <item
         android:id="@+id/notifitions"
@@ -19,7 +19,7 @@
         android:icon="@drawable/ic_notifications"/>
     <item
         android:id="@+id/settings"
-        android:title="Configuracón"
+        android:title="Configuración"
         android:icon="@drawable/ic_settings"/>
 
 </menu>
