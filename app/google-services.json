@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "241384232214",
+    "firebase_url": "https://sweat-time.firebaseio.com",
+    "project_id": "sweat-time",
+    "storage_bucket": "sweat-time.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241384232214:android:3051815e5850328993ec37",
+        "android_client_info": {
+          "package_name": "com.sevillaInc.sweattime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241384232214-ceosrtuif32u5ti037eeqgg5r8pj8tnm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sevillaInc.sweattime",
+            "certificate_hash": "f750b8f9a03a60d3d939522adac1ab75252c7f01"
+          }
+        },
+        {
+          "client_id": "241384232214-8d885uaj1efio1cmr03l01n7is6n8c6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLHl3ViyZziukDXLkb8YpMjfJxrNFab5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241384232214-8d885uaj1efio1cmr03l01n7is6n8c6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

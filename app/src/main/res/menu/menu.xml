@@ -3,23 +3,23 @@
 
     <item
         android:id="@+id/home"
-        android:title="Inicio"
+        android:title="@string/mhome"
         android:icon="@drawable/ic_fitness"/>
     <item
         android:id="@+id/descubre"
-        android:title="Descubre"
+        android:title="@string/mdescubre"
         android:icon="@drawable/ic_home"/>
     <item
         android:id="@+id/time"
-        android:title="Informe"
+        android:title="@string/minforme"
         android:icon="@drawable/ic_watch"/>
     <item
         android:id="@+id/notifitions"
-        android:title="Notificaciones"
+        android:title="@string/mnotificaciones"
         android:icon="@drawable/ic_notifications"/>
     <item
         android:id="@+id/settings"
-        android:title="Configuración"
+        android:title="@string/msettings"
         android:icon="@drawable/ic_settings"/>
 
 </menu>

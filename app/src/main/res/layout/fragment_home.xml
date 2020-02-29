@@ -122,12 +122,13 @@
                 android:textColor="#4C5067"
                 android:textSize="16sp" />
         </LinearLayout>
+
         <Button
             android:id="@+id/ir"
-            android:gravity="center"
-            android:text="IR"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="IR" />
     </LinearLayout>
 
     <LinearLayout
