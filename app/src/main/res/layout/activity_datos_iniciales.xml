@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".DatosIniciales">
 
     <ScrollView
@@ -24,7 +25,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Crear Perfil"
+                android:hint="@string/diTitle"
+                android:textStyle="bold"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textColor="@android:color/black" />
 
@@ -32,7 +34,7 @@
                 android:id="@+id/signup_input_layout_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="40dp"
                 android:textColorHint="@color/gray">
 
                 <EditText
@@ -40,7 +42,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
-                    android:hint="Nombre"
+                    android:hint="@string/diName"
                     android:importantForAutofill="no"
                     android:inputType="text"
                     android:singleLine="true"
@@ -49,57 +51,48 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <RadioGroup
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_layout_user"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:orientation="horizontal">
+                android:textColorHint="@color/gray">
 
-                <RadioButton
-                    android:id="@+id/radioButtonMale"
+                <EditText
+                    android:id="@+id/editTextEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_margin="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/radio_button"
-                    android:button="@null"
-                    android:gravity="center_horizontal"
-                    android:padding="2dp"
-                    android:text="Masculino"
-                    android:textColor="@android:color/black" />
+                    android:layout_marginTop="24dp"
+                    android:hint="@string/diEmail"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/gray" />
 
-                <RadioButton
-                    android:id="@+id/radioButtonFemale"
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/gray">
+
+                <EditText
+                    android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_margin="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/radio_button"
-                    android:button="@null"
-                    android:checked="true"
-                    android:gravity="center_horizontal"
-                    android:padding="2dp"
-                    android:text="Femenino"
-                    android:textColor="@android:color/black" />
+                    android:layout_marginTop="24dp"
+                    android:hint="@string/diPassword"
+                    android:importantForAutofill="no"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/gray" />
 
-                <RadioButton
-                    android:id="@+id/radioButtonOtherGender"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_margin="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/radio_button"
-                    android:button="@null"
-                    android:gravity="center_horizontal"
-                    android:padding="2dp"
-                    android:text="Otro"
-                    android:textColor="@android:color/black" />
-
-            </RadioGroup>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signup_input_layout_name2"
@@ -113,7 +106,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?attr/editTextBackground"
-                    android:hint="Cumpleaños"
+                    android:hint="@string/diBirthday"
                     android:importantForAutofill="no"
                     android:singleLine="true"
                     android:textColor="@android:color/black"
@@ -133,7 +126,7 @@
                     android:id="@+id/profileSize"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Estatura"
+                    android:hint="@string/diEstatura"
                     android:importantForAutofill="no"
                     android:inputType="numberSigned"
                     android:singleLine="true"
@@ -142,16 +135,84 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button"
+                    android:button="@null"
+                    android:gravity="center_horizontal"
+                    android:padding="2dp"
+                    android:hint="@string/diGenreM"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center_horizontal"
+                    android:padding="2dp"
+                    android:hint="@string/diGenreF"
+                    android:textColor="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOtherGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button"
+                    android:button="@null"
+                    android:gravity="center_horizontal"
+                    android:padding="2dp"
+                    android:hint="@string/diGenreO"
+                    android:textColor="@android:color/black" />
+
+            </RadioGroup>
+
             <Button
                 android:id="@+id/create_newprofil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="44dp"
                 android:background="@drawable/round_corner_button"
-                android:text="Guardar"
+                android:hint="@string/diSave"
                 android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/Advise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:hint="@string/diAvise" />
+
+            <TextView
+                android:id="@+id/Skipt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:hint="@string/diSkitp" />
 
         </LinearLayout>
     </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

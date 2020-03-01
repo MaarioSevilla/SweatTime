@@ -16,5 +16,27 @@
 
     <!-- home -->
 
+    <!-- home -->
+
+    <!-- home -->
+
+    <!-- home -->
+
+    <!-- settings -->
+    <string name="sCopyright">Copyright© 2020 Sevilla, Inc.</string>
+
+    <!-- registro -->
+    <string name="diTitle">Crear perfil</string>
+    <string name="diName">Nombre</string>
+    <string name="diEmail">Email</string>
+    <string name="diPassword">Contraseña</string>
+    <string name="diGenreM">Masculino</string>
+    <string name="diGenreF">Femenino</string>
+    <string name="diGenreO">Otro</string>
+    <string name="diBirthday">Cumpleaños</string>
+    <string name="diEstatura">Estatura</string>
+    <string name="diSave">Guardar</string>
+    <string name="diAvise">Puedes registrate mas adelante, pero de lo contrario no se sincronizara tu progreso.</string>
+    <string name="diSkitp">Continuar</string>
 
 </resources>
