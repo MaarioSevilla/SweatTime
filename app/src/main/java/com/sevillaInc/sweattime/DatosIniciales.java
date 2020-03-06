@@ -41,6 +41,7 @@ public class DatosIniciales extends AppCompatActivity {
     private RadioButton mRbOtherGender;
     private TextView skipt;
     private Button mButtonRegister;
+    private Button btniniciarsesion;
     private static final String  TAG = "DatosIniciales";
     private DatePickerDialog.OnDateSetListener mDatelistener;
 
@@ -71,12 +72,21 @@ public class DatosIniciales extends AppCompatActivity {
         mRbFemale = (RadioButton)findViewById(R.id.radioButtonFemale);
         mRbOtherGender = (RadioButton)findViewById(R.id.radioButtonOtherGender);
         mButtonRegister= (Button) findViewById(R.id.create_newprofil);
+        btniniciarsesion=(Button)findViewById(R.id.btniniciarsesion);
         skipt= findViewById(R.id.Skipt);
+
+        btniniciarsesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DatosIniciales.this, LoginActivity.class));
+            }
+        });
 
         //clic en registrar
         mButtonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //obtenemos los datos
                 name=profilename.getText().toString();
                 correo = email.getText().toString();
                 password=pass.getText().toString();
@@ -92,6 +102,7 @@ public class DatosIniciales extends AppCompatActivity {
                 //validaciones de pasword y datos
                 if(!name.isEmpty() &&  !correo.isEmpty() && !password.isEmpty() && !cumple.isEmpty() && !size.isEmpty()){
                     if(password.length()>=6){
+                        //si estan bien funcion
                         registerUser();
                     }else {
                         Toast.makeText(DatosIniciales.this, "El password debe tener 6 caracteres", Toast.LENGTH_SHORT).show();
@@ -99,9 +110,6 @@ public class DatosIniciales extends AppCompatActivity {
                 }else{
                     Toast.makeText(DatosIniciales.this, "Completar campos", Toast.LENGTH_SHORT).show();
                 }
-
-                //Intent intent = new Intent (v.getContext(), MainActivity.class);
-                //startActivityForResult(intent, 0);
             }
         });
         //clic para desplegar el calendario
@@ -174,4 +182,5 @@ public class DatosIniciales extends AppCompatActivity {
             }
         });
     }
+
 }

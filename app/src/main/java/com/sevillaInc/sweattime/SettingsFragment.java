@@ -36,7 +36,7 @@ public class SettingsFragment extends Fragment {
         llperfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (v.getContext(), LoginActivity.class);
+                Intent intent = new Intent (v.getContext(), ProfileActivity.class);
                 startActivityForResult(intent, 0);
             }
         });

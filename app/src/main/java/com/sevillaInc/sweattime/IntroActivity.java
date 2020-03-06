@@ -13,28 +13,52 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class IntroActivity extends AppCompatActivity {
     private ViewPager screenPager;
-    IntroViewPagerAdapter introViewPagerAdapter;
-    TabLayout tabIndicator;
-    Button btnNext, btnGetStarted;
-    LinearLayout linearLayoutNext, linearLayoutGetStarted;
+    private FirebaseAuth mAuth;
+    private IntroViewPagerAdapter introViewPagerAdapter;
+    private TabLayout tabIndicator;
+    private Button btnNext, btnGetStarted;
+    private LinearLayout linearLayoutNext, linearLayoutGetStarted;
+
+    //verificamos el inicio de sesion al iniciar la aplicacion
+    /*
+    @Override
+    protected void onStart() {
+        mAuth = FirebaseAuth.getInstance();
+        super.onStart();
+
+        if(mAuth.getCurrentUser() != null){
+            startActivity(new Intent(IntroActivity.this, MainActivity.class));
+            finish();
+        }else{
+            startActivity(new Intent(IntroActivity.this, DatosIniciales.class));
+        }
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mAuth = FirebaseAuth.getInstance();
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         if (restorePreData()){
-            Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
+            /*Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(mainActivity);
-            finish();
+            finish();*/
+            if(mAuth.getCurrentUser() != null){
+                startActivity(new Intent(IntroActivity.this, MainActivity.class));
+                finish();
+            }else{
+                startActivity(new Intent(IntroActivity.this, DatosIniciales.class));
+            }
         }
 
         setContentView(R.layout.activity_intro);

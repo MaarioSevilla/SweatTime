@@ -35,8 +35,10 @@
     <string name="diGenreO">Otro</string>
     <string name="diBirthday">Cumpleaños</string>
     <string name="diEstatura">Estatura</string>
-    <string name="diSave">Guardar</string>
-    <string name="diAvise">Puedes registrate mas adelante, pero de lo contrario no se sincronizara tu progreso.</string>
+    <string name="diSave">Registrarse</string>
+    <string name="diAvise">Puedes hechar un vistazo y registrarte despues.</string>
     <string name="diSkitp">Continuar</string>
+    <string name="diSesion">Iniciar sesión</string>
+    <string name="diSigOut">Cerrar sesión</string>
 
 </resources>

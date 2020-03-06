@@ -21,31 +21,16 @@
             android:padding="0dp"
             android:weightSum="1">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/imageView_profile"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="40dp"
-                android:src="@drawable/userico" />
-
             <TextView
-                android:id="@+id/tUser"
+                android:id="@+id/Me"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/imageView_profile"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="5dp"
-                android:text="Usuario no registrado"
-                android:textColor="#161616"
+                android:layout_gravity="left"
+                android:hint="Acerca de mi"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/adorno"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_below="@+id/tUser"
-                android:src="@drawable/adorno" />
 
             <LinearLayout
                 android:id="@+id/llPerfil"
@@ -163,11 +148,72 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/Meapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:hint="Acerca de nosotros"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearlayout_4"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_user" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Politica de privacidad"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearlayout_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearlayout_4"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_user" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Acknowledgements"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="70dp"
+                    android:src="@drawable/ic_user" />
+            </LinearLayout>
+            <TextView
                 android:id="@+id/Copyright"
                 android:layout_width="317dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
+                android:paddingTop="46dp"
                 android:hint="@string/sCopyright" />
         </LinearLayout>
     </ScrollView>

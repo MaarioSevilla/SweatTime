@@ -19,45 +19,59 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Toolbar toolbar;
-    ProgressBar progressBar;
-    EditText userEmail;
-    EditText userPass;
-    Button userLogin;
+    private EditText userEmail;
+    private EditText userPass;
+    private Button userLogin;
+    private Button btnRegistrar;
 
-    FirebaseAuth firebaseAuth;
+    private String email="";
+    private String password="";
+
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        //toolbar= findViewById(R.id.toolbar2);
-        progressBar=findViewById(R.id.progressBar);
-        userEmail=findViewById(R.id.etUserEmail);
-        userPass=findViewById(R.id.etUserPassword);
-        userLogin=findViewById(R.id.btnUserLogin);
-        userLogin=findViewById(R.id.btnUserLogin);
+        userEmail=(EditText) findViewById(R.id.etUserEmail);
+        userPass=(EditText)findViewById(R.id.etUserPassword);
+        userLogin=(Button)findViewById(R.id.btnUserLogin);
+        btnRegistrar=(Button)findViewById(R.id.btnRegistrarse);
 
-        //toolbar.setTitle("Login");
-        firebaseAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
         userLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                firebaseAuth.signInWithEmailAndPassword(userEmail.getText().toString(), userPass.getText().toString()).addOnCompleteListener(
-                        new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            startActivity(new Intent(LoginActivity.this, ProfileActivity.class));
-                        }else {
-                            Toast.makeText(LoginActivity.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
-                        }
-                    }
-                });
+                email= userEmail.getText().toString();
+                password= userPass.getText().toString();
+                if(!email.isEmpty()&& !password.isEmpty()){
+                    loginUser();
+                }else {
+                    Toast.makeText(LoginActivity.this, "Completar campos", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
+        btnRegistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, DatosIniciales.class));
+            }
+        });
+    }
+    private void loginUser(){
+        mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    finish();
+                }else{
+                    Toast.makeText(LoginActivity.this, "Compruebe campos", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 }
