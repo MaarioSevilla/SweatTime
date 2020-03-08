@@ -17,8 +17,8 @@ import android.widget.LinearLayout;
  */
 public class SettingsFragment extends Fragment {
 
-    View vista;
-    LinearLayout llperfil;
+    private View vista1;
+    private LinearLayout llperfil;
 
     public SettingsFragment() {
         // Required empty public constructor
@@ -29,9 +29,9 @@ public class SettingsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        vista = inflater.inflate(R.layout.fragment_settings, container, false);
+        vista1 = inflater.inflate(R.layout.fragment_settings, container, false);
 
-        llperfil= (LinearLayout)vista.findViewById(R.id.llPerfil);
+        llperfil= (LinearLayout)vista1.findViewById(R.id.llPerfil);
 
         llperfil.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +41,7 @@ public class SettingsFragment extends Fragment {
             }
         });
 
-        return vista;
+        return vista1;
     }
 
 }

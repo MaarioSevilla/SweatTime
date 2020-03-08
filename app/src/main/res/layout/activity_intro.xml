@@ -49,11 +49,11 @@
             android:layout_height="48dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:background="@drawable/rounded"
+            android:background="@drawable/degradado_button"
             android:fontFamily="@font/ibm_semibold"
-            android:text="Siguiente"
+            android:hint="@string/iNext"
+            android:textColorHint="#D9D9D9"
             android:textAllCaps="false"
-            android:textColor="#fff"
             android:textSize="17sp" />
     </LinearLayout>
 
@@ -74,11 +74,11 @@
             android:layout_height="48dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:background="@drawable/rounded"
+            android:background="@drawable/degradado_button"
             android:fontFamily="@font/ibm_semibold"
-            android:text="Comenzar"
+            android:hint="@string/iStar"
             android:textAllCaps="false"
-            android:textColor="#fff"
+            android:textColorHint="#D9D9D9"
             android:textSize="17sp" />
     </LinearLayout>
 

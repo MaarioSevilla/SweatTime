@@ -14,6 +14,10 @@
     <string name="mnotificaciones">Notificaciones</string>
     <string name="msettings">Configuración</string>
 
+    <!-- intro -->
+    <string name="iNext">Siguiente</string>
+    <string name="iStar">Comenzar</string>
+
     <!-- home -->
 
     <!-- home -->
@@ -25,7 +29,7 @@
     <!-- settings -->
     <string name="sCopyright">Copyright© 2020 Sevilla, Inc.</string>
 
-    <!-- registro -->
+    <!-- registro datos iniciales e iniciar sesion -->
     <string name="diTitle">Crear perfil</string>
     <string name="diName">Nombre</string>
     <string name="diEmail">Email</string>
@@ -39,6 +43,8 @@
     <string name="diAvise">Puedes hechar un vistazo y registrarte despues.</string>
     <string name="diSkitp">Continuar</string>
     <string name="diSesion">Iniciar sesión</string>
+    <string name="diSaveFb">Ingresar con facebook</string>
     <string name="diSigOut">Cerrar sesión</string>
+    <string name="Login">Ingresar</string>
 
 </resources>

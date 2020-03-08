@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimary"
     tools:context=".DatosIniciales">
 
     <ScrollView
@@ -21,21 +22,27 @@
             android:padding="28dp"
             android:weightSum="1">
 
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:srcCompat="@mipmap/appiconsred" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:hint="@string/diTitle"
-                android:textStyle="bold"
+                android:fontFamily="@font/ibm_bold"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textColor="@android:color/black" />
+                android:textColorHint="@color/zona_VIII" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signup_input_layout_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:textColorHint="@color/gray">
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/zona_IV">
 
                 <EditText
                     android:id="@+id/profileName"
@@ -46,8 +53,9 @@
                     android:importantForAutofill="no"
                     android:inputType="text"
                     android:singleLine="true"
-                    android:textColor="@android:color/black"
-                    android:textColorHint="@color/gray" />
+                    android:textColor="@color/zona_VIII"
+                    android:fontFamily="@font/ibm_regular"
+                    />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,8 +63,8 @@
                 android:id="@+id/signup_input_layout_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:textColorHint="@color/gray">
+                android:layout_marginTop="4dp"
+                android:textColorHint="@color/zona_IV">
 
                 <EditText
                     android:id="@+id/editTextEmail"
@@ -67,8 +75,8 @@
                     android:importantForAutofill="no"
                     android:inputType="text"
                     android:singleLine="true"
-                    android:textColor="@android:color/black"
-                    android:textColorHint="@color/gray" />
+                    android:textColor="@color/zona_VIII"
+                    android:fontFamily="@font/ibm_regular"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -76,8 +84,8 @@
                 android:id="@+id/signup_input_layout_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:textColorHint="@color/gray">
+                android:layout_marginTop="4dp"
+                android:textColorHint="@color/zona_IV">
 
                 <EditText
                     android:id="@+id/password"
@@ -89,8 +97,8 @@
                     android:ems="10"
                     android:inputType="textPassword"
                     android:singleLine="true"
-                    android:textColor="@android:color/black"
-                    android:textColorHint="@color/gray" />
+                    android:textColor="@color/zona_VIII"
+                    android:fontFamily="@font/ibm_regular"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -98,8 +106,8 @@
                 android:id="@+id/signup_input_layout_name2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:textColorHint="@color/gray">
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/zona_IV">
 
                 <TextView
                     android:id="@+id/profileBirthday"
@@ -109,8 +117,9 @@
                     android:hint="@string/diBirthday"
                     android:importantForAutofill="no"
                     android:singleLine="true"
-                    android:textColor="@android:color/black"
-                    android:textColorHint="@color/gray"
+                    android:textColor="@color/zona_VIII"
+                    android:textColorHint="@color/zona_IV"
+                    android:fontFamily="@font/ibm_regular"
                     android:textSize="18sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -119,8 +128,8 @@
                 android:id="@+id/signup_input_layout_name3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:textColorHint="@color/gray">
+                android:layout_marginTop="4dp"
+                android:textColorHint="@color/zona_IV">
 
                 <EditText
                     android:id="@+id/profileSize"
@@ -130,8 +139,8 @@
                     android:importantForAutofill="no"
                     android:inputType="numberSigned"
                     android:singleLine="true"
-                    android:textColor="@android:color/black"
-                    android:textColorHint="@color/gray" />
+                    android:textColor="@color/zona_VIII"
+                    android:fontFamily="@font/ibm_regular" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -139,7 +148,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical|center_horizontal"
-                android:layout_marginTop="17dp"
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal">
 
                 <RadioButton
@@ -154,7 +163,8 @@
                     android:gravity="center_horizontal"
                     android:padding="2dp"
                     android:hint="@string/diGenreM"
-                    android:textColor="@android:color/black" />
+                    android:textColorHint="@color/zona_X"
+                    android:fontFamily="@font/ibm_regular"/>
 
                 <RadioButton
                     android:id="@+id/radioButtonFemale"
@@ -169,7 +179,8 @@
                     android:gravity="center_horizontal"
                     android:padding="2dp"
                     android:hint="@string/diGenreF"
-                    android:textColor="@android:color/black" />
+                    android:textColorHint="@color/zona_X"
+                    android:fontFamily="@font/ibm_regular" />
 
                 <RadioButton
                     android:id="@+id/radioButtonOtherGender"
@@ -183,7 +194,8 @@
                     android:gravity="center_horizontal"
                     android:padding="2dp"
                     android:hint="@string/diGenreO"
-                    android:textColor="@android:color/black" />
+                    android:textColorHint="@color/zona_X"
+                    android:fontFamily="@font/ibm_regular" />
 
             </RadioGroup>
 
@@ -191,32 +203,40 @@
                 android:id="@+id/create_newprofil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="44dp"
-                android:background="@drawable/round_corner_button"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/iempty_button"
                 android:hint="@string/diSave"
-                android:textColor="@android:color/black" />
+                android:textSize="16sp"
+                android:fontFamily="@font/ibm_semibold"
+                android:textColorHint="@color/zona_IX"/>
             <Button
                 android:id="@+id/btniniciarsesion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/round_corner_button"
+                android:background="@drawable/iempty_button"
                 android:hint="@string/diSesion"
-                android:textColor="@android:color/black" />
+                android:textSize="16sp"
+                android:fontFamily="@font/ibm_semibold"
+                android:textColorHint="@color/zona_IX"/>
 
             <TextView
                 android:id="@+id/Advise"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
+                android:fontFamily="@font/ibm_regular"
+                android:textColorHint="@color/zona_V"
                 android:hint="@string/diAvise" />
 
             <TextView
                 android:id="@+id/Skipt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="3dp"
                 android:gravity="center"
+                android:textColorHint="@color/zona_V"
+                android:fontFamily="@font/ibm_regular"
                 android:hint="@string/diSkitp" />
 
         </LinearLayout>

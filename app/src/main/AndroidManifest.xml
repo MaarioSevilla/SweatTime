@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ProfileActivity"></activity>
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity" android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".StartWorkActivityDesing" />
         <activity android:name=".MainActivity" />
         <activity
@@ -29,11 +29,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DatosIniciales" />
+        <activity android:name=".DatosIniciales" android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".workout" />
-        <activity
-            android:name=".StartWorkAct"
-            android:parentActivityName=".MainActivity" />
+        <activity android:name=".StartWorkAct" android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

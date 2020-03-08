@@ -24,34 +24,12 @@ import java.util.logging.SimpleFormatter;
  */
 public class HomeFragment extends Fragment {
 
-    View vista;
-    Button btnVerde;
+    private View vista;
+    private Button btnVerde;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        /*Thread t = new Thread() {
-            @Override
-            public void run() {
-                try {
-                    while (!isInterrupted()) {
-                        Thread.sleep(1000);
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                TextView tdate = (TextView)findViewById(R.id.date);
-                                long date = System.currentTimeMillis();
-                                SimpleDateFormat sdf = new SimpleDateFormat("MMM dd yyyy\nhh-mm-ss a");
-                                String dateString = sdf.format(date);
-                                tdate.setText(dateString);
-                            }
-                        });
-                    }
-                } catch (InterruptedException e) {
-                }
-            }
-        };
-        t.start();*/
     }
 
     public HomeFragment() {
@@ -74,6 +52,36 @@ public class HomeFragment extends Fragment {
                 startActivityForResult(intent, 0);
             }
         });
+
+        TextView tdate = (TextView)vista.findViewById(R.id.date);
+        long date = System.currentTimeMillis();
+        SimpleDateFormat sdf = new SimpleDateFormat("EEE d MMM");
+        String dateString = sdf.format(date);
+        tdate.setText(dateString);
+
+        /*
+        Thread t = new Thread() {
+            @Override
+            public void run() {
+                try {
+                    while (!isInterrupted()) {
+                        Thread.sleep(0);
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                TextView tdate = (TextView)vista.findViewById(R.id.date);
+                                long date = System.currentTimeMillis();
+                                SimpleDateFormat sdf = new SimpleDateFormat("EEE d MMM");
+                                String dateString = sdf.format(date);
+                                tdate.setText(dateString);
+                            }
+                        });
+                    }
+                } catch (InterruptedException e) {
+                }
+            }
+        };
+        t.start();*/
 
         return vista;
     }

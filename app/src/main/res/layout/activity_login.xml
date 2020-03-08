@@ -5,45 +5,111 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimary"
     tools:context=".LoginActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyle"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:visibility="gone"/>
+            android:layout_gravity="top"
+            android:fitsSystemWindows="false"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="28dp"
+            android:weightSum="1">
 
 
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/appiconsred" />
 
-    <EditText
-        android:id="@+id/etUserEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="email"
-        android:inputType="textEmailAddress" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/diSesion"
+                android:gravity="center"
+                android:fontFamily="@font/ibm_bold"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/zona_X"
+                android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/etUserPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/diPassword"
-        android:inputType="textPassword" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:textColorHint="@color/zona_IV">
 
-    <Button
-        android:id="@+id/btnUserLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Login" />
-    <Button
-        android:id="@+id/btnRegistrarse"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/diSave" />
+                <EditText
+                    android:id="@+id/etUserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:ems="10"
+                    android:hint="@string/diEmail"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/edit_round"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:textColorHint="@color/zona_IV">
+
+                <EditText
+                    android:id="@+id/etUserPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:ems="10"
+                    android:hint="@string/diPassword"
+                    android:inputType="textPassword"
+                    android:background="@drawable/edit_round"
+                    android:paddingLeft="10dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnUserLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Login"
+                android:fontFamily="@font/ibm_semibold"
+                android:layout_marginTop="40dp"
+                android:textColorHint="@color/zona_VIII"
+                android:background="@drawable/rounded"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btnRegistrarse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/diSave"
+                android:fontFamily="@font/ibm_semibold"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/zona_VIII"
+                android:background="@drawable/rounded"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btnIngrsarWithFb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/diSaveFb"
+                android:fontFamily="@font/ibm_semibold"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/zona_VIII"
+                android:background="@drawable/rounded"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

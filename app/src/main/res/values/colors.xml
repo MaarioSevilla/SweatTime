@@ -29,4 +29,44 @@
     <color name="tableheader_background">#FFFFFF</color>
     <color name="launcher_background">#0dadf4</color>
     <color name="disabled_color">#bababa</color>
+
+    <!-- Sistema de zonas -->
+    <color name="zona_0">#000000</color>
+    <color name="zona_I">#111111</color>
+    <color name="zona_II">#292929</color>
+    <color name="zona_III">#434343</color>
+    <color name="zona_IV">#616161</color>
+    <color name="zona_V">#7F7F7F</color>
+    <color name="zona_VI">#A1A1A1</color>
+    <color name="zona_VII">#BDBDBD</color>
+    <color name="zona_VIII">#D9D9D9</color>
+    <color name="zona_IX">#F0F0F0</color>
+    <color name="zona_X">#FFFFFF</color>
+
+    <!-- More much more -->
+    <color name="black_1">#242424</color>
+    <color name="black_2">#161616</color>
+    <color name="black_3">#1b1b1b</color>
+    <color name="black_4">#515151</color>
+    <color name="black_5">#412a1a</color>
+    <color name="black_6">#0b0a0a</color>
+    <color name="black_7">#2f2f2f</color>
+    <color name="black_8">#161616</color>
+    <color name="black_9">#252525</color>
+    <color name="black_11">#191c1e</color>
+    <color name="black_12">#1b2c3c</color>
+    <color name="black_13">#1a1f2c</color>
+
+    <color name="gray_">#6c757d</color>
+    <color name="black_">#6b747c</color>
+
+    <color name="add_claro">#e1c7b6</color>
+    <color name="add_w">#dbdbdb</color>
+    <color name="add_w1">#e6e6e6</color>
+    <color name="add_white_cool">#e0e0e0</color>
+    <color name="add_w2">#dcdcdc</color>
+    <color name="add_w3">#e3e3e3</color>
+    <color name="add_wg">#cecec6</color>
+    <color name="add_g">#8a8a84</color>
+    <color name="add_">#820307</color>
 </resources>
