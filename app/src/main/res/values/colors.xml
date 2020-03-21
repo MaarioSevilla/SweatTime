@@ -43,6 +43,10 @@
     <color name="zona_IX">#F0F0F0</color>
     <color name="zona_X">#FFFFFF</color>
 
+    <color name="iosF">#f2f2f6</color>
+    <color name="iosB_">#fefefe</color>
+    <color name="iosLine">#c6c6c8</color>
+
     <!-- More much more -->
     <color name="black_1">#242424</color>
     <color name="black_2">#161616</color>

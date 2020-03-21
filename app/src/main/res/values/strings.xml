@@ -18,15 +18,25 @@
     <string name="iNext">Siguiente</string>
     <string name="iStar">Comenzar</string>
 
-    <!-- home -->
+    <string name="iTime">Tu progreso</string>
+
 
     <!-- home -->
-
-    <!-- home -->
+    <string name="ntoday">Hoy</string>
+    <string name="nNotification">Te damos la bienvenida a nuestra app</string>
 
     <!-- home -->
 
     <!-- settings -->
+    <string name="sAbout">Acerca de mi</string>
+    <string name="sAboutMe">Acerca de nosotros</string>
+    <string name="sPerfil">Perfil</string>
+    <string name="sGenre">Genero</string>
+    <string name="sAltura">Altura</string>
+    <string name="sPeso">Peso</string>
+    <string name="sEdad">Edad</string>
+    <string name="sPolitica">Politica de privacidad</string>
+    <string name="sAcknow">Acknowledgements</string>
     <string name="sCopyright">Copyright© 2020 Sevilla, Inc.</string>
 
     <!-- registro datos iniciales e iniciar sesion -->
@@ -46,5 +56,63 @@
     <string name="diSaveFb">Ingresar con facebook</string>
     <string name="diSigOut">Cerrar sesión</string>
     <string name="Login">Ingresar</string>
+
+    <!-- home -->
+
+    <string name="leyenda">Comienza a perder peso y llevar una vida mas fitness</string>
+    <string name="titulo_home">Mi rutina</string>
+    <string name="introduction">Continua donde lo dejaste</string>
+
+    <string name="rutine_I">Rutina para ABS</string>
+    <string name="duration_I">4 a 5 Minutos</string>
+    <string name="rutine_II">Rutina para ABS II</string>
+    <string name="duration_II">4 a 5 Minutos</string>
+    <string name="rutine_III">Rutina floor</string>
+    <string name="duration_III">4 a 5 Minutos</string>
+    <string name="rutine_IV">Springs</string>
+    <string name="duration_IV">4 a 5 Minutos</string>
+    <string name="rutine_V">Bicicleta</string>
+    <string name="duration_V">4 a 5 Minutos</string>
+
+    <!-- startWork -->
+    <string name="titlefis">Rutina para ABS</string>
+    <string name="duration">4 a 5 Minutos</string>
+    <string name="howdo">Como hacerlo</string>
+    <string name="descripcion">Sigue el ejemplo de la imagen.</string>
+    <string name="star">Iniciar Ejercicio</string>
+
+    <string name="titlefisI">Rutina para ABS II</string>
+    <string name="durationI">4 a 5 Minutos</string>
+    <string name="howdoI">Como hacerlo</string>
+    <string name="descripcionI">Sigue el ejemplo de la imagen.</string>
+
+    <string name="titlefisII">Rutina floor</string>
+    <string name="durationII">4 a 5 Minutos</string>
+    <string name="howdoII">Como hacerlo</string>
+    <string name="descripcionII">Quema grasas.</string>
+
+    <string name="titlefisIII">Spring</string>
+    <string name="durationIII">4 a 5 Minutos</string>
+    <string name="howdoIII">Como hacerlo</string>
+    <string name="descripcionIII">Hacer X ejercicio</string>
+
+    <string name="titlefisIV">Bicicleta</string>
+    <string name="durationIV">4 a 5 Minutos</string>
+    <string name="howdoIV">Como hacerlo</string>
+    <string name="descripcionIV">Rutina de ABS</string>
+
+
+    <string name="videoI">Rutina completa</string>
+    <string name="videoII">10 minutos de workout</string>
+    <string name="videoIII">Rutina quema grasas</string>
+    <string name="videoIV">/Rutina 10 min.</string>
+    <string name="videoV">Gluteos</string>
+    <string name="videoVI">Rutina Gap</string>
+
+    <string name="politicasTitle">Politicas</string>
+    <string name="agracimiTitleI">Agradecimientos</string>
+    <string name="contentPoliticas">Al crear una cuenta aceptas hacer uso adecuado de la aplicacion, cualquier uso indebido queda bajo resposabilidad del usuario.</string>
+    <string name="contentAgradecimient">Varia de las imagenes utilizadas en esta aplicacion fueron obtenidas de giphy</string>
+    <string name="title_activity_more">MoreActivity</string>
 
 </resources>

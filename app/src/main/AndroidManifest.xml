@@ -16,8 +16,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProfileActivity"></activity>
-        <activity android:name=".LoginActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".MoreActivity"></activity>
+        <activity android:name=".VideosActivity" />
+        <activity android:name=".AgradecimientosActivity" />
+        <activity android:name=".PoliticasActivity" />
+        <activity android:name=".workexcercise.StartWorkAct_IV" />
+        <activity android:name=".workexcercise.StartWorkAct_III" />
+        <activity android:name=".workexcercise.StartWorkAct_II" />
+        <activity android:name=".workexcercise.StartWorkAct_I" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".StartWorkActivityDesing" />
         <activity android:name=".MainActivity" />
         <activity
@@ -29,9 +39,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DatosIniciales" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".DatosIniciales"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".workout" />
-        <activity android:name=".StartWorkAct" android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".StartWorkAct"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

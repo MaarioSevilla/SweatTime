@@ -1,9 +1,7 @@
-package com.sevillaInc.sweattime;
+package com.sevillaInc.sweattime.workexcercise;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -14,15 +12,17 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.sevillaInc.sweattime.R;
+
 import java.util.Locale;
 
-public class StartWorkAct extends AppCompatActivity {
+public class StartWorkAct_IV extends AppCompatActivity {
     private TextView intropage, subintropage, fitonetitle, fitonedesc, timerValue, btnexercise;
     private View divpage, bgprogress;
     private ImageView imgtimer;
     private LinearLayout fitone;
 
-    private static final long START_TIME_IN_MILLIS = 300000;
+    private static final long START_TIME_IN_MILLIS = 800000;
     private CountDownTimer countDownTimer;
     private boolean mTimerRunning;
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
@@ -32,7 +32,7 @@ public class StartWorkAct extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start_work);
+        setContentView(R.layout.activity_start_work_act__iv);
 
 // load animations
         btthree = AnimationUtils.loadAnimation(this, R.anim.btthree);

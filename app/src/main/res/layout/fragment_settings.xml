@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/iosF"
     tools:context=".SettingsFragment">
 
     <ScrollView
@@ -13,7 +14,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="top"
             android:fitsSystemWindows="false"
             android:gravity="center"
@@ -26,125 +27,251 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:hint="Acerca de mi"
-                android:paddingTop="15dp"
+                android:fontFamily="@font/ibm_bold"
+                android:hint="@string/sAbout"
+                android:layout_marginTop="25dp"
                 android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/zona_0"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:id="@+id/llPerfil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/adorno"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
+                android:layout_marginTop="20dp"
+                android:background="@color/iosB_"
+                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginLeft="70dp"
-                    android:src="@drawable/ic_user" />
+                <View
+                    android:id="@+id/divpage0"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="@color/iosLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+
+                <LinearLayout
+                    android:id="@+id/llPerfil"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/adorno"
                     android:layout_marginTop="5dp"
-                    android:text="Perfil"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                    android:orientation="horizontal">
 
-            <LinearLayout
-                android:id="@+id/linearlayout_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/linearlayout_1"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/weightlifting_36px" />
 
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginLeft="70dp"
-                    android:src="@drawable/ic_user" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/ibm_regular"
+                        android:hint="@string/sPerfil"
+                        android:textColorHint="@color/zona_III"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/ibm_regular"
+                        android:text="de hombre"
+                        android:textColor="@color/zona_III"
+                        android:visibility="invisible"
+                        android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="0dp"
+                        android:src="@drawable/ic_right" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/divpageI"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="@color/iosLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_2"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/linearlayout_1"
                     android:layout_marginTop="5dp"
-                    android:text="Genero"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                    android:orientation="horizontal">
 
-            <LinearLayout
-                android:id="@+id/linearlayout_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/linearlayout_2"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/male_and_female_36px" />
 
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginLeft="70dp"
-                    android:src="@drawable/ic_user" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/ibm_regular"
+                        android:hint="@string/sGenre"
+                        android:textColorHint="@color/zona_III"
+                        android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                    <TextView
+                        android:id="@+id/txtgenre"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/ibm_regular"
+                        android:text="hombre"
+                        android:textColor="@color/zona_III"
+                        android:visibility="invisible"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="83dp"
+                        android:src="@drawable/ic_right" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divpageII"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="@color/iosLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_3"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/linearlayout_2"
                     android:layout_marginTop="5dp"
-                    android:text="Altura"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                    android:orientation="horizontal">
 
-            <LinearLayout
-                android:id="@+id/linearlayout_4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/linearlayout_3"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/compare36px" />
 
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginLeft="70dp"
-                    android:src="@drawable/ic_user" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/ibm_regular"
+                        android:hint="@string/sAltura"
+                        android:textColorHint="@color/zona_III"
+                        android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                    <TextView
+                        android:id="@+id/txtaltura"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/ibm_regular"
+                        android:text="hombre"
+                        android:visibility="invisible"
+                        android:textColor="@color/zona_III"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="83dp"
+                        android:src="@drawable/ic_right" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divpageIII"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="@color/iosLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_5"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/linearlayout_4"
                     android:layout_marginTop="5dp"
-                    android:text="Peso"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                    android:orientation="horizontal">
 
-            <LinearLayout
-                android:id="@+id/linearlayout_5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/linearlayout_4"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/age_36px" />
 
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginLeft="70dp"
-                    android:src="@drawable/ic_user" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/ibm_regular"
+                        android:hint="@string/sEdad"
+                        android:textColorHint="@color/zona_III"
+                        android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    <TextView
+                        android:id="@+id/txtedad"
+                        android:layout_width="119dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/ibm_regular"
+                        android:text="hombre"
+                        android:visibility="invisible"
+                        android:textColor="@color/zona_III"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="83dp"
+                        android:src="@drawable/ic_right" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divpage"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="0dp"
                     android:layout_marginTop="5dp"
-                    android:text="Edad"
-                    android:textSize="18sp" />
+                    android:layout_marginEnd="0dp"
+                    android:background="@color/iosLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
             </LinearLayout>
 
             <TextView
@@ -152,69 +279,129 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:hint="Acerca de nosotros"
-                android:paddingTop="15dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/ibm_bold"
+                android:hint="@string/sAboutMe"
                 android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:textColorHint="@color/zona_0"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
+
             <LinearLayout
-                android:id="@+id/linearlayout_6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/linearlayout_4"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+                android:layout_marginTop="20dp"
+                android:background="@color/iosB_"
+                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginLeft="30dp"
-                    android:src="@drawable/ic_user" />
+                <View
+                    android:id="@+id/divpageVI"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="@color/iosLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/llPoliticas"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/linearlayout_4"
                     android:layout_marginTop="5dp"
-                    android:text="Politica de privacidad"
-                    android:textSize="18sp" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/linearlayout_7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/linearlayout_4"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+                    android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginLeft="30dp"
-                    android:src="@drawable/ic_user" />
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/copyright_36px" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/ibm_regular"
+                        android:hint="@string/sPolitica"
+                        android:textColorHint="@color/zona_III"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="83dp"
+                        android:src="@drawable/ic_right" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divpageVII"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="@color/iosLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/llAgradecimiento"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/linearlayout_4"
                     android:layout_marginTop="5dp"
-                    android:text="Acknowledgements"
-                    android:textSize="18sp" />
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginLeft="70dp"
-                    android:src="@drawable/ic_user" />
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/applause_36px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/ibm_regular"
+                        android:hint="@string/sAcknow"
+                        android:textColorHint="@color/zona_III"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="100dp"
+                        android:src="@drawable/ic_right" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divpageVIII"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="@color/iosLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
             </LinearLayout>
+
             <TextView
                 android:id="@+id/Copyright"
                 android:layout_width="317dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                android:fontFamily="@font/ibm_regular"
                 android:gravity="center"
-                android:paddingTop="46dp"
-                android:hint="@string/sCopyright" />
+                android:hint="@string/sCopyright"
+                android:layout_marginTop="46dp"
+                android:paddingTop="10dp" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
